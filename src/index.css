@@ -34,6 +34,7 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  white-space: pre-wrap;
 }
 
 .note-footer{
@@ -67,4 +68,26 @@ textarea:focus{
 .save:hover{
   background-color: white;
   cursor: pointer;
+}
+
+.delete-icon:hover{
+  cursor: pointer;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  border-radius: 12px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+
+.search input{
+  border: none;
+  background-color: rgb(233, 233, 233);
+}
+
+.search input:focus{
+  outline: none;
 }
