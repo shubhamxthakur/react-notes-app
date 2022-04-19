@@ -9,12 +9,12 @@ const App = () => {
   const [notes, setNotes] = useState([
     {
       id: nanoid(),
-      text: "This is my first note!",
+      text: "Namaste, welcome to your notes app. You can keep your notes securely here.",
       date: "10/04/2022"
     },
     {
       id: nanoid(),
-      text: "This is my second note!",
+      text: "This is a default note! You can delete this",
       date: "12/04/2022"
     },
     {
@@ -22,16 +22,11 @@ const App = () => {
       text: "This is my third note!",
       date: "21/04/2022"
     },
-    {
-      id: nanoid(),
-      text: "This is my fourth note!",
-      date: "31/04/2022"
-    },
   ]);
 
   const [searchText, setSearchText] = useState('');
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(()=> {
     const savedNotes = JSON.parse(localStorage.getItem('react-notes-app-data')
