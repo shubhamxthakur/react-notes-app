@@ -38,7 +38,7 @@ const App = () => {
     );
 
     if(savedNotes){
-      setNotes(savedNotes);
+      setNotes(savedNotes); 
     }
   }, [])
 
@@ -58,7 +58,7 @@ const App = () => {
   };
 
   const deleteNote = (id) => {
-    const newNotes = notes.filter((note) => note.id != id);
+    const newNotes = notes.filter((note) => note.id !== id);
     setNotes(newNotes)
   }
 
