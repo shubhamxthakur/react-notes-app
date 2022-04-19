@@ -12,11 +12,26 @@ code {
     monospace;
 }
 
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark-mode{
+  background-color: rgb(22, 25, 51);
+}
+
+.dark-mode h1{
+  color: rgb(4, 235, 235);
+}
+
 .container{
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
   padding: 0px 15px;
+  min-height: 100vh;
 }
 
 .notes-list{
@@ -59,7 +74,7 @@ textarea:focus{
 }
 
 .save{
-  background-color: rgb(226, 255, 241);
+  background-color: rgb(236, 255, 246);
   border: none;
   border-radius: 15px;
   padding: 8px 12px;
