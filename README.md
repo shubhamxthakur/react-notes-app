@@ -1,4 +1,4 @@
-# Safe Notes App
+# Notes App
 You can keep your notes securely to your own PC without having to trust some third-party note taking app with your data.
 
 ## This Notes App project has been created using React.Js and it stores all your data locally on your pc.
